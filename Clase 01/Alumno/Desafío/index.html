@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="tab icon" href="./favicon.png">
   <title>Clase 01 - Desafío</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .form-group {
+      width: 49%;
+      margin: 1% 0% 1% 0%;
+    }
+
+    .form-control {
+      width: 100%
+    }
+
+    .btn {
+      margin: 2% 0% 1% 0%;
+      width: 99%
+    }
+  </style>
 </head>
+
 <body>
 
+  <div class="container">
+
+    <div class="col-md-6">
+      <h1>Lista de alumnos</h1>
+    </div>
+
+    <div class="col-md-6">
+      <h2>ingreso de datos</h2>
+
+      <form class="form-inline">
+
+        <div class="form-group">
+          <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre" style="width: 100%">
+        </div>
+        <div class="form-group">
+          <input type="Apellido" class="form-control" id="Apellido" placeholder="Apellido" name="Apellido" style="width: 100%">
+        </div>
+        <div class="form-group">
+          <input type="DNI" class="form-control" id="DNI" placeholder="DNI" name="DNI" style="width: 100%">
+        </div>
+        <div class="form-group">
+          <input type="E-mail" class="form-control" id="E-mail" placeholder="E-mail" name="E-mail" style="width: 100%">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Agregar Alumno</button>
+
+        <div class="form-group">
+          <input type="DNI" class="form-control" id="DNI" placeholder="DNI" name="DNI" style="width: 100%">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-danger">Eliminar Alumno</button>
+        </div>
+        <div class="form-group">
+          <input type="Nombre" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre" style="width: 100%">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Buscar Alumno</button>
+        </div>
+
+      </form>
+    </div>
 
 </body>
+
 </html>

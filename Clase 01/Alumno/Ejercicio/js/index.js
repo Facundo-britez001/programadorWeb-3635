@@ -24,5 +24,4 @@
 //var parsedotroNumero = parseFloat(otroNumero, 10)
 
 
-
 //console.log(parsedunNumero - parsedotroNumero)
