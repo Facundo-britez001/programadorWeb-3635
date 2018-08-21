@@ -1,3 +1,5 @@
+//
+//
 
 var genero = prompt('ingrese genero masculino o femenino')
 var edad = prompt('ingrese la edad')
@@ -42,8 +44,3 @@ console.log(generoCalculado + ' ' + edadCalculada)
 // }else{
 //   console.log('Error, usted ingreso mal la edad'a)
 // }
-
-
-
-// Sra. usted es mayor de edad puede ingresar
-// Sr. usted es menor de edad no puede ingresar
