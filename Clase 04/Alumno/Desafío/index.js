@@ -1,7 +1,7 @@
 //
 //
 
-var operacion = prompt('ingrese un alumno')
+var alumno = prompt('ingrese un alumno')
 
 var studentsList = [
   {
@@ -25,3 +25,24 @@ var studentsList = [
     dni: 45678983
   }
 ]
+
+let posicion = buscarAlumno(alumno, studentsList)
+
+if (posicion >= 0) {
+  console.log('Se encontro al alumno en la posicion ' + posicion)
+} else {
+  console.log('No se encontro al alumno buscado')
+}
+
+function buscarAlumno (alumnoBuscado, alumnos) {
+  for (let i = 0; i < alumnos.length; i++) {
+    var nombre = alumnos[i].firstName
+    var apellido = alumnos[i].lastName
+
+    if (alumnoBuscado === nombre || alumnoBuscado === apellido) {
+      return i
+    }
+  }
+
+  return -1
+}
