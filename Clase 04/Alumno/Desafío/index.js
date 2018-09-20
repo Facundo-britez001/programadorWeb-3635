@@ -46,3 +46,5 @@ function buscarAlumno (alumnoBuscado, alumnos) {
 
   return -1
 }
+
+function name (params) {}
